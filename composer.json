@@ -1,0 +1,35 @@
+{
+	"name": "winc-oops/passport-pkce",
+	"description": "Laravel's Passport PKCE implementation package",
+	"autoload": {
+		"psr-4": {
+			"WincOops\\PassportPkce\\": "src/",
+			"WincOops\\PassportPkce\\Tests\\": "tests/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"WincOops\\PassportPkce\\Tests\\": "tests/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Wiru",
+			"email": "estuardo.quan@gmail.com"
+		}
+	],
+	"require-dev": {
+		"orchestra/testbench": "^7.5"
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"WincOops\\PassportPkce\\PassportPkceServiceProvider",
+				"WincOops\\PassportPkce\\RouteServiceProvider"
+			],
+			"aliases": {
+				"PassportPkce": "WincOops\\PassportPkce\\Facades\\PassportPkce"
+			}
+		}
+	}
+}
