@@ -2,7 +2,7 @@
 
 return [
 
-    [  /*
+    /*
     |--------------------------------------------------------------------------
     | Passport Routes Subdomain
     |--------------------------------------------------------------------------
@@ -13,9 +13,9 @@ return [
     |
     */
 
-        'subdomain' => env('PASSPORT_ROUTES_SUBDOMAIN', 'accounts'),
+    'subdomain' => env('PASSPORT_ROUTES_SUBDOMAIN', 'accounts'),
 
-        /*
+    /*
     |--------------------------------------------------------------------------
     | Passport Routes Prefix
     |--------------------------------------------------------------------------
@@ -26,6 +26,6 @@ return [
     |
     */
 
-        'prefix' => env('PASSPORT_ROUTES_PREFIX', 'oauth'),
-    ]
+    'prefix' => env('PASSPORT_ROUTES_PREFIX', 'oauth'),
+
 ];

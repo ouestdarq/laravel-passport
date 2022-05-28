@@ -34,11 +34,9 @@ class AuthorizationController extends PassportAuthorizationController
 
         $user = $request->user();
         $client = $clients->find($authRequest->getClient()->getIdentifier());
-        // $token = $tokens->findValidToken();
 
         $token = $client->tokens()
             ->whereUserId($user->getAuthIdentifier())
-            // ->where('revoked', 0)
             ->latest('expires_at')
             ->first();
 
@@ -51,7 +49,7 @@ class AuthorizationController extends PassportAuthorizationController
         $request->session()->put('authToken', $authToken = Str::random());
         $request->session()->put('authRequest', $authRequest);
 
-        return $this->response->view('passport::authorize', [
+        return $this->response->view('passport-pkce::authorize', [
             'client' => $client,
             'user' => $user,
             'scopes' => $scopes,
