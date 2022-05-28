@@ -2,6 +2,9 @@
 	"name": "winc-oops/passport-pkce",
 	"description": "Laravel's Passport PKCE implementation package",
 	"autoload": {
+		"files": [
+			"src/helpers.php"
+		],
 		"psr-4": {
 			"WincOops\\PassportPkce\\": "src/",
 			"WincOops\\PassportPkce\\Tests\\": "tests/"

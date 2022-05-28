@@ -11,10 +11,10 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->routes(function () {
             Route::middleware('web')
-                ->group(base_path('routes/web.php'));
+                ->group(__DIR__ . '/../routes/web.php');
 
             Route::middleware('api')
-                ->group(base_path('routes/api.php'));
+                ->group(__DIR__ . '/../routes/web.php');
         });
     }
 }

@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('test-package', function () {
-    return 'ok';
+Route::get('winc-oops', function () {
+    return response()->json([
+        'status' => 200,
+        'test' => test_helper()
+    ]);
 });
