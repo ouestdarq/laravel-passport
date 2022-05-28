@@ -7,7 +7,7 @@
 			"WincOops\\PassportPkce\\Tests\\": "tests/"
 		},
 		"files": [
-			"helpers.php"
+			"src/helpers.php"
 		]
 	},
 	"autoload-dev": {
@@ -35,5 +35,8 @@
 				"PassportPkce": "WincOops\\PassportPkce\\Facades\\PassportPkce"
 			}
 		}
+	},
+	"require": {
+		"laravel/passport": "^10.4"
 	}
 }

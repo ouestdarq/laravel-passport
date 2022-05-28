@@ -1,7 +1,8 @@
 <?php
 
-namespace WincOops\PassportPkce;
+namespace WincOops\PassportPkce\Providers;
 
+use WincOops\PassportPkce\HelloWorld;
 use Illuminate\Support\ServiceProvider;
 
 class PassportPkceServiceProvider extends ServiceProvider

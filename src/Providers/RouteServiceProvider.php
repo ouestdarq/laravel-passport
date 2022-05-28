@@ -1,6 +1,6 @@
 <?php
 
-namespace WincOops\PassportPkce;
+namespace WincOops\PassportPkce\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
@@ -11,10 +11,10 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->routes(function () {
             Route::middleware('web')
-                ->group(__DIR__ . '/../routes/web.php');
+                ->group(__DIR__ . '/../../routes/web.php');
 
             Route::middleware('api')
-                ->group(__DIR__ . '/../routes/web.php');
+                ->group(__DIR__ . '/../../routes/web.php');
         });
     }
 }
