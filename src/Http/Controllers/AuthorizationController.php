@@ -49,7 +49,7 @@ class AuthorizationController extends PassportAuthorizationController
         $request->session()->put('authToken', $authToken = Str::random());
         $request->session()->put('authRequest', $authRequest);
 
-        return $this->response->view('passport-pkce::authorize', [
+        return $this->response->view('passport::authorize', [
             'client' => $client,
             'user' => $user,
             'scopes' => $scopes,

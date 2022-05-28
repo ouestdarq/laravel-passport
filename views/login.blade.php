@@ -32,7 +32,7 @@
                     Login
                 </span>
             </div>
-            <form class="w-75 mb-5" method="POST" action="/login">
+            <form class="w-75 mb-5" method="POST" action="/oauth/login">
                 @csrf
                 <div class="mb-3">
                     <label for="email" class="form-label">Email address</label>

@@ -31,8 +31,8 @@
 		"laravel": {
 			"providers": [
 				"WincOops\\PassportPkce\\Providers\\PassportPkceServiceProvider",
-				"WincOops\\PassportPkce\\Providers\\RouteServiceProvider",
-				"WincOops\\PassportPkce\\Providers\\AuthServiceProvider"
+				"WincOops\\PassportPkce\\Providers\\AuthServiceProvider",
+				"WincOops\\PassportPkce\\Providers\\RouteServiceProvider"
 			],
 			"aliases": {
 				"PassportPkce": "WincOops\\PassportPkce\\Facades\\PassportPkce"
