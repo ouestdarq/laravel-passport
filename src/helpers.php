@@ -1,11 +1,15 @@
 <?php
 
-function src_dir($path = null)
+function src_path($path = null)
 {
-    return __DIR__ . $path;
+    return $path ?
+        ($path[0] === '/' ? __DIR__ . $path : __DIR__ . '/' . $path)
+        : __DIR__;
 }
 
-function package_dir($path = null)
+function package_path($path = null)
 {
-    return dirname(__DIR__) . $path;
+    return $path ?
+        ($path[0] === '/' ? dirname(__DIR__) . $path : dirname(__DIR__) . '/' . $path)
+        : dirname(__DIR__);
 }

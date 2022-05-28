@@ -10,7 +10,13 @@ class PassportPkceServiceProvider extends ServiceProvider
 
 	public function boot()
 	{
-		// $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+		$this->loadViewsFrom(package_path('views'), 'passport-pkce');
+		$this->publishes([
+			package_path('views') => resource_path('views/vendor/passport-pkce'),
+		], 'passport-pkce-views');
+		$this->publishes([
+			package_path('config/passport-pkce.php') => base_path('config/passport-pkce.php')
+		], 'passport-pkce-config');
 	}
 
 	public function register()
@@ -18,5 +24,7 @@ class PassportPkceServiceProvider extends ServiceProvider
 		$this->app->bind('passport-pkce', function () {
 			return new HelloWorld;
 		}, false);
+
+		$this->mergeConfigFrom(package_path('config/passport-pkce.php'), 'passport-pkce');
 	}
 }

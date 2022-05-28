@@ -21,6 +21,9 @@
 			"email": "estuardo.quan@gmail.com"
 		}
 	],
+	"require": {
+		"laravel/passport": "^10.4"
+	},
 	"require-dev": {
 		"orchestra/testbench": "^7.5"
 	},
@@ -35,8 +38,5 @@
 				"PassportPkce": "WincOops\\PassportPkce\\Facades\\PassportPkce"
 			}
 		}
-	},
-	"require": {
-		"laravel/passport": "^10.4"
 	}
 }
