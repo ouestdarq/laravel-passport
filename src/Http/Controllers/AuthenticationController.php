@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 use WincOops\PassportPkce\Http\Controllers\Controller;
 
-class AuthController extends Controller
+class AuthenticationController extends Controller
 {
     /**
      * Handle a login request to the application.

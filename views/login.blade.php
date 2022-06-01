@@ -8,8 +8,8 @@
     </ul>
 </div>
 @endif
-<main class="container vh-100 d-flex col col-xxl-4 col-md-6 align-items-center justify-content-center">
-    <div class="card w-100 h-75 mx-auto p-2">
+<main class="container vh-100 d-flex col col-xxl-3 col-md-5 col-sm-8 align-items-center justify-content-center">
+    <div class="w-100 h-50 mx-auto p-2">
         <div class="card-body d-flex flex-column align-items-center justify-content-center">
             <div class="w-50 d-flex flex-column align-items-center justify-content-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="50%" height="50%">
@@ -23,16 +23,16 @@
                     </defs>
                     <mask id="smile">
                         <rect width="32" height="32" fill="white" />
-                        <path fill="none" stroke-linecap="round" stoke-width="2" stroke="black"
+                        <path fill="none" stroke-linecap="round" stroke-width="2" stroke="black"
                             d="M 6 19 C 8 30,24 30, 26 19" />
                     </mask>
                     <circle fill="url(#logo-gradient)" mask="url(#smile)" cx="16" cy="16" r="15" />
                 </svg>
-                <span class="mb-3 display-6">
+                <span class="mb-3 text-muted display-6">
                     Login
                 </span>
             </div>
-            <form class="w-75 mb-5" method="POST" action="/oauth/login">
+            <form class="w-100 mb-5" method="POST" action="/oauth/login">
                 @csrf
                 <div class="mb-3">
                     <label for="email" class="form-label">Email address</label>
@@ -47,7 +47,7 @@
                 <div class="mb-5 d-flex justify-content-start">
                     <div class="btn-group" role="group">
                         <input id="remember" name="remember" type="checkbox" class="btn-check" />
-                        <label for="remember" class="btn btn-sm btn-outline-secondary">Remember me</label>
+                        <label for="remember" class="btn btn-sm text-muted btn-outline-light">Remember me</label>
                     </div>
                 </div>
                 <div class="d-flex justify-content-between">

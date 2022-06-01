@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use WincOops\PassportPkce\Http\Controllers\AuthController;
+use WincOops\PassportPkce\Http\Controllers\AuthenticationController;
 
 Route::name('/logout')
     ->middleware('auth:api')
     ->post('/logout', [
-        AuthController::class,
+        AuthenticationController::class,
         'logout'
     ]);
