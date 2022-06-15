@@ -1,10 +1,10 @@
 <?php
 
-namespace WincOops\PassportPkce\Http\Controllers;
+namespace WincOops\LaravelPassportPkce\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
-use WincOops\PassportPkce\Http\Controllers\Controller;
+use WincOops\LaravelPassportPkce\Http\Controllers\Controller;
 
 class AuthenticationController extends Controller
 {

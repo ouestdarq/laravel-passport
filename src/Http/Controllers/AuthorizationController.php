@@ -1,6 +1,6 @@
 <?php
 
-namespace WincOops\PassportPkce\Http\Controllers;
+namespace WincOops\LaravelPassportPkce\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;

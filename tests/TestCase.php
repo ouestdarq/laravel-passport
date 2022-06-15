@@ -1,6 +1,6 @@
 <?php
 
-namespace WincOops\PassportPkce\Tests;
+namespace WincOops\LaravelPassportPkce\Tests;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
@@ -9,15 +9,16 @@ class TestCase extends BaseTestCase
     protected function getPackageProviders($app)
     {
         return [
-            WincOops\PassportPkce\PassportPkceServiceProvider::class,
-            WincOops\PassportPkce\RouteServiceProvider::class,
+            WincOops\LaravelPassportPkce\AuthServiceProvider::class,
+            WincOops\LaravelPassportPkce\PkceServiceProvider::class,
+            WincOops\LaravelPassportPkce\RouteServiceProvider::class,
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            "PassportPkce" => WincOops\PassportPkce\Facades\PassportPkce::class
+            "LaaravelPassport" => WincOops\LaravelPassportPkce\Facades\LaravelPassport::class
         ];
     }
 }

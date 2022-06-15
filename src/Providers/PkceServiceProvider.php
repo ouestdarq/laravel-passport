@@ -1,11 +1,11 @@
 <?php
 
-namespace WincOops\PassportPkce\Providers;
+namespace WincOops\LaravelPassportPkce\Providers;
 
-use WincOops\PassportPkce\HelloWorld;
+use WincOops\LaravelPassportPkce\HelloWorld;
 use Illuminate\Support\ServiceProvider;
 
-class PassportPkceServiceProvider extends ServiceProvider
+class PkceServiceProvider extends ServiceProvider
 {
 
 	public function boot()
@@ -21,7 +21,7 @@ class PassportPkceServiceProvider extends ServiceProvider
 
 	public function register()
 	{
-		$this->app->bind('passport-pkce', function () {
+		$this->app->bind('laravel-passport', function () {
 			return new HelloWorld;
 		}, false);
 

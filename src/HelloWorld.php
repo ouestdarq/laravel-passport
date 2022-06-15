@@ -1,6 +1,6 @@
 <?php
 
-namespace WincOops\PassportPkce;
+namespace WincOops\LaravelPassportPkce;
 
 class HelloWorld
 {

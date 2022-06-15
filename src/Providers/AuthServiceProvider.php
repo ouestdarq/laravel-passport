@@ -1,6 +1,6 @@
 <?php
 
-namespace WincOops\PassportPkce\Providers;
+namespace WincOops\LaravelPassportPkce\Providers;
 
 
 use Laravel\Passport\Passport;

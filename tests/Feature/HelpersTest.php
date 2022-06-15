@@ -1,8 +1,8 @@
 <?php
 
-namespace WincOops\PassportPkce\Tests\Feature;
+namespace WincOops\LaravelPassportPkce\Tests\Feature;
 
-use WincOops\PassportPkce\Tests\TestCase;
+use WincOops\LaravelPassportPkce\Tests\TestCase;
 
 class HelpersTest extends TestCase
 {
