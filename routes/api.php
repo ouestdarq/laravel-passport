@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use WincOops\PassportPkce\Http\Controllers\AuthenticationController;
+use WincOops\LaravelPassportPkce\Http\Controllers\AuthenticationController;
 
 Route::name('/logout')
     ->middleware('auth:api')

@@ -18,7 +18,7 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware('api')
                 ->domain(config('passport-pkce.subdomain') . '.' . config('app.url'))
-                ->prefix(config('passport-pkce.prefix') . '/api')
+                ->prefix('/api')
                 ->group(package_path('routes/api.php'));
         });
     }

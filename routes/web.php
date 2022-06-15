@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use WincOops\PassportPkce\Http\Controllers\AuthenticationController;
-use WincOops\PassportPkce\Http\Controllers\AuthorizationController;
+use WincOops\LaravelPassportPkce\Http\Controllers\AuthenticationController;
+use WincOops\LaravelPassportPkce\Http\Controllers\AuthorizationController;
 
 
 Route::view('/login', 'passport-pkce::login');
