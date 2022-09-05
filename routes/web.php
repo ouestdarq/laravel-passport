@@ -13,10 +13,3 @@ Route::name('login')
         AuthenticationController::class,
         'login',
     ]);
-
-Route::name('passport.authorizations.authorize')
-    ->middleware('auth')
-    ->get('/authorize', [
-        AuthorizationController::class,
-        'authorize'
-    ]);
