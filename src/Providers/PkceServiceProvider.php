@@ -14,9 +14,6 @@ class PkceServiceProvider extends ServiceProvider
 		$this->publishes([
 			package_path('views') => resource_path('views/vendor/passport-pkce'),
 		], 'passport-pkce-views');
-		$this->publishes([
-			package_path('config/passport-pkce.php') => base_path('config/passport-pkce.php')
-		], 'passport-pkce-config');
 	}
 
 	public function register()
@@ -24,7 +21,5 @@ class PkceServiceProvider extends ServiceProvider
 		$this->app->bind('oauth-pkce', function () {
 			return new HelloWorld;
 		}, false);
-
-		$this->mergeConfigFrom(package_path('config/passport-pkce.php'), 'passport-pkce');
 	}
 }

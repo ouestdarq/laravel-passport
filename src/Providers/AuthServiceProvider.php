@@ -14,13 +14,8 @@ class AuthServiceProvider extends ServiceProvider
                 $router->forAuthorization();
                 $router->forAccessTokens();
                 $router->forTransientTokens();
-            },
-            [
-                'domain' => config('passport-pkce.subdomain') . '.' . config('app.url'),
-                'prefix' => config('passport-pkce.prefix'),
-            ]
+            }
         );
-
         // Passport::tokensCan([]);
     }
     public function register()

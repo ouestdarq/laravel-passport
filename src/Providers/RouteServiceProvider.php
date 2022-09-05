@@ -12,12 +12,10 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->routes(function () {
             Route::middleware('web')
-                ->domain(config('passport-pkce.subdomain') . '.' . config('app.url'))
-                ->prefix(config('passport-pkce.prefix'))
+                ->prefix('/accounts')
                 ->group(package_path('routes/web.php'));
 
             Route::middleware('api')
-                ->domain(config('passport-pkce.subdomain') . '.' . config('app.url'))
                 ->prefix('/api')
                 ->group(package_path('routes/api.php'));
         });
