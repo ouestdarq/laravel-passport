@@ -18,6 +18,13 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('api')
                 ->prefix('/api')
                 ->group(package_path('routes/api.php'));
+
+            Route::name('passport.authorizations.authorize')
+                ->middleware('auth')
+                ->get('/authorize', [
+                    AuthorizationController::class,
+                    'authorize'
+                ]);
         });
     }
 }
