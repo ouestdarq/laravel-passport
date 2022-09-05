@@ -12,12 +12,13 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->routes(function () {
             Route::middleware('web')
-                ->prefix('/accounts')
-                ->group(package_path('routes/accounts.php'));
+                ->group(function () {
+                    Route::prefix('/accounts')
+                        ->group(package_path('routes/accounts.php'));
 
-            Route::middleware('web')
-                ->prefix('/oauth')
-                ->group(package_path('routes/oauth.php'));
+                    Route::prefix('/oauth')
+                        ->group(package_path('routes/oauth.php'));
+                });
 
             Route::middleware('api')
                 ->prefix('/api')
