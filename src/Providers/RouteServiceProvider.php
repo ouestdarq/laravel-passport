@@ -13,18 +13,15 @@ class RouteServiceProvider extends ServiceProvider
         $this->routes(function () {
             Route::middleware('web')
                 ->prefix('/accounts')
-                ->group(package_path('routes/web.php'));
+                ->group(package_path('routes/accounts.php'));
+
+            Route::middleware('web')
+                ->prefix('/oauth')
+                ->group(package_path('routes/oauth.php'));
 
             Route::middleware('api')
                 ->prefix('/api')
                 ->group(package_path('routes/api.php'));
-
-            Route::name('passport.authorizations.authorize')
-                ->middleware('auth')
-                ->get('/authorize', [
-                    AuthorizationController::class,
-                    'authorize'
-                ]);
         });
     }
 }

@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use Woops\LaravelPassport\Http\Controllers\AuthenticationController;
-use Woops\LaravelPassport\Http\Controllers\AuthorizationController;
-
 
 Route::view('/login', 'passport-pkce::login');
 
