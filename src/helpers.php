@@ -1,7 +1,5 @@
 <?php
 
-//
-
 function src_path($path = null)
 {
     return $path ?

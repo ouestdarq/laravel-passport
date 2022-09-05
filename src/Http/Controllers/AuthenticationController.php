@@ -1,10 +1,10 @@
 <?php
 
-namespace WincOops\LaravelPassportPkce\Http\Controllers;
+namespace Woops\LaravelPassport\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
-use WincOops\LaravelPassportPkce\Http\Controllers\Controller;
+use Woops\LaravelPassport\Http\Controllers\Controller;
 
 class AuthenticationController extends Controller
 {
@@ -39,11 +39,11 @@ class AuthenticationController extends Controller
         // user surpasses their maximum number of attempts they will get locked out.
         // $this->incrementLoginAttempts($request);
 
-        return throw ValidationException::withMessages([
+        throw ValidationException::withMessages([
             $this->username() => [
                 __('auth.failed'),
-            ],
-        ]);;
+            ]
+        ]);
     }
 
     public function logout(Request $request)

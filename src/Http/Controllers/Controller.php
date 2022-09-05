@@ -1,6 +1,6 @@
 <?php
 
-namespace WincOops\LaravelPassportPkce\Http\Controllers;
+namespace Woops\LaravelPassport\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

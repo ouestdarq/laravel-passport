@@ -1,8 +1,8 @@
 <?php
 
-namespace WincOops\LaravelPassportPkce\Providers;
+namespace Woops\LaravelPassport\Providers;
 
-use WincOops\LaravelPassportPkce\HelloWorld;
+use Woops\LaravelPassport\HelloWorld;
 use Illuminate\Support\ServiceProvider;
 
 class PkceServiceProvider extends ServiceProvider
@@ -21,7 +21,7 @@ class PkceServiceProvider extends ServiceProvider
 
 	public function register()
 	{
-		$this->app->bind('laravel-passport', function () {
+		$this->app->bind('oauth-pkce', function () {
 			return new HelloWorld;
 		}, false);
 

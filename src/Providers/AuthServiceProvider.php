@@ -1,7 +1,6 @@
 <?php
 
-namespace WincOops\LaravelPassportPkce\Providers;
-
+namespace Woops\LaravelPassport\Providers;
 
 use Laravel\Passport\Passport;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;

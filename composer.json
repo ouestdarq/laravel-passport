@@ -1,9 +1,9 @@
 {
-	"name": "winc-oops/laravel-passport-pkce",
+	"name": "w-oops/laravel-passport",
 	"description": "Laravel's Passport PKCE implementation package",
 	"autoload": {
 		"psr-4": {
-			"WincOops\\LaravelPassportPkce\\": "src/"
+			"Woops\\LaravelPassport\\": "src/"
 		},
 		"files": [
 			"src/helpers.php"
@@ -11,7 +11,7 @@
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"WincOops\\LaravelPassportPkce\\Tests\\": "tests/"
+			"Woops\\LaravelPassport\\Tests\\": "tests/"
 		}
 	},
 	"authors": [
@@ -29,12 +29,12 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"WincOops\\LaravelPassportPkce\\Providers\\PkceServiceProvider",
-				"WincOops\\LaravelPassportPkce\\Providers\\AuthServiceProvider",
-				"WincOops\\LaravelPassportPkce\\Providers\\RouteServiceProvider"
+				"Woops\\LaravelPassport\\Providers\\PkceServiceProvider",
+				"Woops\\LaravelPassport\\Providers\\AuthServiceProvider",
+				"Woops\\LaravelPassport\\Providers\\RouteServiceProvider"
 			],
 			"aliases": {
-				"LaravelPassport": "WincOops\\LaravelPassportPkce\\Facades\\LaravelPassport"
+				"OauthPkce": "Woops\\LaravelPassport\\Facades\\OauthPkce"
 			}
 		}
 	}
