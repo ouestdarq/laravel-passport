@@ -10,9 +10,9 @@ class PkceServiceProvider extends ServiceProvider
 
 	public function boot()
 	{
-		$this->loadViewsFrom(package_path('resources/views'), 'passport-pkce');
+		$this->loadViewsFrom(woops_laravel_passport('resources/views'), 'passport-pkce');
 		$this->publishes([
-			package_path('resources/views') => resource_path('views/vendor/passport-pkce'),
+			woops_laravel_passport('resources/views') => resource_path('views/vendor/passport-pkce'),
 		], 'passport-pkce-views');
 	}
 

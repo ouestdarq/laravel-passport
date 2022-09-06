@@ -14,15 +14,15 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->group(function () {
                     Route::prefix('/accounts')
-                        ->group(package_path('routes/accounts.php'));
+                        ->group(woops_laravel_passport('routes/accounts.php'));
 
                     Route::prefix('/oauth')
-                        ->group(package_path('routes/oauth.php'));
+                        ->group(woops_laravel_passport('routes/oauth.php'));
                 });
 
             Route::middleware('api')
                 ->prefix('/api')
-                ->group(package_path('routes/api.php'));
+                ->group(woops_laravel_passport('routes/api.php'));
         });
     }
 }
