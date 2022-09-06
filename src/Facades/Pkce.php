@@ -4,7 +4,7 @@ namespace Woops\LaravelPassport\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class OauthPkce extends Facade
+class Pkce extends Facade
 {
 
     protected static function getFacadeAccessor()

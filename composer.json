@@ -34,7 +34,7 @@
 				"Woops\\LaravelPassport\\Providers\\RouteServiceProvider"
 			],
 			"aliases": {
-				"OauthPkce": "Woops\\LaravelPassport\\Facades\\OauthPkce"
+				"Pkce": "Woops\\LaravelPassport\\Facades\\Pkce"
 			}
 		}
 	}

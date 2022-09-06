@@ -18,7 +18,7 @@ class TestCase extends BaseTestCase
     protected function getPackageAliases($app)
     {
         return [
-            "OauthPkce" => Woops\LaravelPassport\Facades\OauthPkce::class
+            "Pkce" => Woops\LaravelPassport\Facades\Pkce::class
         ];
     }
 }
