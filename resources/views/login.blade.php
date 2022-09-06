@@ -10,6 +10,7 @@
 </div>
 @endif
 {{woops_laravel_passport()}}
+{{__DIR__}}
 <main class="container vh-100 d-flex col col-xxl-3 col-md-5 col-sm-8 align-items-center justify-content-center">
     <div class="w-100 h-50 mx-auto p-2">
         <div class="card-body d-flex flex-column align-items-center justify-content-center">
