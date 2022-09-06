@@ -1,3 +1,4 @@
+@extends('layout')
 @section('content')
 @if($errors->any())
 <div class="w-100 alert alert-danger position-absolute">

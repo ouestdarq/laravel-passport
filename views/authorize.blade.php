@@ -1,3 +1,4 @@
+@extends('layout')
 @section('content')
 <main class="container vh-100 d-flex col col-xxl-4 col-md-6 align-items-center justify-content-center">
     <div class="card w-100 h-25 mx-auto">
