@@ -30,7 +30,7 @@
 		"laravel": {
 			"providers": [
 				"ProxyMurder\\LaravelPassport\\Providers\\PkceServiceProvider",
-				"ProxyMurder\\LaravelPassport\\Providers\\AuthServiceProvider",
+				"ProxyMurder\\LaravelPassport\\Providers\\OAuthServiceProvider",
 				"ProxyMurder\\LaravelPassport\\Providers\\RouteServiceProvider"
 			],
 			"aliases": {

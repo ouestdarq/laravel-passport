@@ -10,7 +10,7 @@ class TestCase extends BaseTestCase
     {
         return [
             ProxyMurder\LaravelPassport\AuthServiceProvider::class,
-            ProxyMurder\LaravelPassport\PkceServiceProvider::class,
+            ProxyMurder\LaravelPassport\OAuthServiceProvider::class,
             ProxyMurder\LaravelPassport\RouteServiceProvider::class,
         ];
     }
