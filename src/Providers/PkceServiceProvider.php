@@ -1,8 +1,8 @@
 <?php
 
-namespace Woops\LaravelPassport\Providers;
+namespace ProxyMurder\LaravelPassportOAuth\Providers;
 
-use Woops\LaravelPassport\HelloWorld;
+use ProxyMurder\LaravelPassportOAuth\HelloWorld;
 use Illuminate\Support\ServiceProvider;
 
 class PkceServiceProvider extends ServiceProvider
@@ -10,15 +10,15 @@ class PkceServiceProvider extends ServiceProvider
 
 	public function boot()
 	{
-		$this->loadViewsFrom(woops_laravel_passport('resources/views'), 'passport-pkce');
+		$this->loadViewsFrom(proxymurder_passport('resources/views'), 'passport-pkce');
 		$this->publishes([
-			woops_laravel_passport('resources/views') => resource_path('views/vendor/passport-pkce'),
+			proxymurder_passport('resources/views') => resource_path('views/vendor/passport-pkce'),
 		], 'passport-pkce-views');
 	}
 
 	public function register()
 	{
-		$this->app->bind('oauth-pkce', function () {
+		$this->app->bind('proxymurder-passport', function () {
 			return new HelloWorld;
 		}, false);
 	}

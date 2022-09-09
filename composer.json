@@ -1,23 +1,23 @@
 {
-	"name": "w-oops/laravel-passport",
-	"description": "Laravel's Passport PKCE implementation package",
+	"name": "proxymurder/laravel-passport-oauth",
+	"description": "Laravel's Passport single install pkce implementation.",
 	"autoload": {
 		"psr-4": {
-			"Woops\\LaravelPassport\\": "src/"
+			"ProxyMurder\\LaravelPassportOAuth\\": "src/"
 		},
 		"files": [
-			"src/helpers.php"
+			"helpers.php"
 		]
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Woops\\LaravelPassport\\Tests\\": "tests/"
+			"ProxyMurder\\LaravelPassportOAuth\\Tests\\": "tests/"
 		}
 	},
 	"authors": [
 		{
-			"name": "Wiru",
-			"email": "estuardo.quan@gmail.com"
+			"name": "MurderByProxy",
+			"email": "ohmygod@proxymurder.com"
 		}
 	],
 	"require": {
@@ -29,12 +29,12 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"Woops\\LaravelPassport\\Providers\\PkceServiceProvider",
-				"Woops\\LaravelPassport\\Providers\\AuthServiceProvider",
-				"Woops\\LaravelPassport\\Providers\\RouteServiceProvider"
+				"ProxyMurder\\LaravelPassportOAuth\\Providers\\PkceServiceProvider",
+				"ProxyMurder\\LaravelPassportOAuth\\Providers\\AuthServiceProvider",
+				"ProxyMurder\\LaravelPassportOAuth\\Providers\\RouteServiceProvider"
 			],
 			"aliases": {
-				"Pkce": "Woops\\LaravelPassport\\Facades\\Pkce"
+				"Pkce": "ProxyMurder\\LaravelPassportOAuth\\Facades\\Pkce"
 			}
 		}
 	}

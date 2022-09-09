@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Woops\LaravelPassport\Http\Controllers\AuthenticationController;
+use ProxyMurder\LaravelPassportOAuth\Http\Controllers\AuthenticationController;
 
 Route::view('login', 'passport-pkce::login');
 

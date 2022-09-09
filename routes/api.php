@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Woops\LaravelPassport\Http\Controllers\AuthenticationController;
+use ProxyMurder\LaravelPassportOAuth\Http\Controllers\AuthenticationController;
 
 Route::name('api.logout')
     ->middleware('auth:api')

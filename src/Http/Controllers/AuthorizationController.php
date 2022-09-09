@@ -1,6 +1,6 @@
 <?php
 
-namespace Woops\LaravelPassport\Http\Controllers;
+namespace ProxyMurder\LaravelPassportOAuth\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;

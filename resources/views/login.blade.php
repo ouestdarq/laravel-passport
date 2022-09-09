@@ -13,21 +13,14 @@
     <div class="w-100 h-50 mx-auto p-2">
         <div class="card-body d-flex flex-column align-items-center justify-content-center">
             <div class="w-50 d-flex flex-column align-items-center justify-content-center">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="50%" height="50%">
-                    <defs>
-                        <linearGradient id="logo-gradient" x1="100%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stop-color="#efadce" />
-
-                            <stop offset="100%" stop-color="#a6e9d5" />
-
-                        </linearGradient>
-                    </defs>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100" height="100">
                     <mask id="smile">
                         <rect width="32" height="32" fill="white" />
-                        <path fill="none" stroke-linecap="round" stroke-width="2" stroke="black"
+                        <path fill="none" stroke-linecap="round" stoke-width="2" stroke="black"
                             d="M 6 19 C 8 30,24 30, 26 19" />
                     </mask>
-                    <circle fill="url(#logo-gradient)" mask="url(#smile)" cx="16" cy="16" r="15" />
+                    <circle fill="#000000" cx="16" cy="16" r="15" />
+                    <circle fill="#ffffff" mask="url(#smile)" cx="16" cy="16" r="14" />
                 </svg>
                 <span class="mb-3 text-muted display-6">
                     Login

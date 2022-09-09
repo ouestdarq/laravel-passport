@@ -1,10 +1,10 @@
 <?php
 
-namespace Woops\LaravelPassport\Http\Controllers;
+namespace ProxyMurder\LaravelPassportOAuth\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
-use Woops\LaravelPassport\Http\Controllers\Controller;
+use ProxyMurder\LaravelPassportOAuth\Http\Controllers\Controller;
 
 class AuthenticationController extends Controller
 {
