@@ -60,7 +60,7 @@ class AuthenticationController extends Controller
      */
     protected function attemptLogin(Request $request)
     {
-        return auth()->guard()->attempt(
+        return auth()->attempt(
             $this->credentials($request),
             $request->filled('remember')
         );
