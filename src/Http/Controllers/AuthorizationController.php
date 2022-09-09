@@ -1,6 +1,6 @@
 <?php
 
-namespace ProxyMurder\LaravelPassportOAuth\Http\Controllers;
+namespace ProxyMurder\LaravelPassport\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -49,7 +49,7 @@ class AuthorizationController extends PassportAuthorizationController
         $request->session()->put('authToken', $authToken = Str::random());
         $request->session()->put('authRequest', $authRequest);
 
-        return $this->response->view('passport-pkce::authorize', [
+        return $this->response->view('proxymurder-passport::authorize', [
             'client' => $client,
             'user' => $user,
             'scopes' => $scopes,

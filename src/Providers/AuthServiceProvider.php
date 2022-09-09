@@ -1,6 +1,6 @@
 <?php
 
-namespace ProxyMurder\LaravelPassportOAuth\Providers;
+namespace ProxyMurder\LaravelPassport\Providers;
 
 use Laravel\Passport\Passport;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;

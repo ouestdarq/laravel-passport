@@ -1,6 +1,6 @@
 <?php
 
-namespace ProxyMurder\LaravelPassportOAuth\Http\Controllers;
+namespace ProxyMurder\LaravelPassport\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

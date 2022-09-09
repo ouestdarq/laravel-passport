@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use ProxyMurder\LaravelPassportOAuth\Http\Controllers\AuthorizationController;
+use ProxyMurder\LaravelPassport\Http\Controllers\AuthorizationController;
 
 Route::name('passport.authorizations.authorize')
     ->middleware('auth')

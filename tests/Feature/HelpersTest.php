@@ -1,8 +1,8 @@
 <?php
 
-namespace Woops\LaravelPassport\Tests\Feature;
+namespace ProxyMurder\LaravelPassport\Tests\Feature;
 
-use Woops\LaravelPassport\Tests\TestCase;
+use ProxyMurder\LaravelPassport\Tests\TestCase;
 
 class HelpersTest extends TestCase
 {

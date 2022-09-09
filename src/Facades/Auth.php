@@ -1,10 +1,10 @@
 <?php
 
-namespace ProxyMurder\LaravelPassportOAuth\Facades;
+namespace ProxyMurder\LaravelPassport\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Pkce extends Facade
+class Auth extends Facade
 {
 
     protected static function getFacadeAccessor()

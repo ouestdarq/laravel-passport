@@ -1,6 +1,6 @@
 <?php
 
-namespace ProxyMurder\LaravelPassportOAuth;
+namespace ProxyMurder\LaravelPassport;
 
 class HelloWorld
 {

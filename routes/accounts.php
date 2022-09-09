@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use ProxyMurder\LaravelPassportOAuth\Http\Controllers\AuthenticationController;
+use ProxyMurder\LaravelPassport\Http\Controllers\AuthenticationController;
 
-Route::view('login', 'passport-pkce::login');
+Route::view('login', 'proxymurder-passport::login');
 
 Route::name('login')
     ->middleware('guest')
