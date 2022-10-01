@@ -10,15 +10,15 @@ class OAuthServiceProvider extends ServiceProvider
 
 	public function boot()
 	{
-		$this->loadViewsFrom(proxymurder_passport('resources/views'), 'proxymurder-passport');
+		$this->loadViewsFrom(proxymurder_passport('resources/views'), 'proxymurder/laravel-passport');
 		$this->publishes([
 			proxymurder_passport('resources/views') => resource_path('views/vendor/proxymurder/laravel-passport'),
-		], 'proxymurder-passport-views');
+		], 'laravel-passport-views');
 	}
 
 	public function register()
 	{
-		$this->app->bind('proxymurder-passport', function () {
+		$this->app->bind('laravel-passport', function () {
 			return new HelloWorld;
 		}, false);
 	}

@@ -9,6 +9,6 @@ class Auth extends Facade
 
     protected static function getFacadeAccessor()
     {
-        return 'proxymurder-passport';
+        return 'laravel-passport';
     }
 }
