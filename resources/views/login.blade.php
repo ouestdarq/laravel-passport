@@ -57,7 +57,7 @@
     </div>
 </main> --}}
 
-    <main class="container">
+    <main class="container bg-black">
 
     </main>
 @endsection
