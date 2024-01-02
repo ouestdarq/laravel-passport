@@ -12,20 +12,20 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->routes(function () {
             Route::middleware('web')->group(function () {
-                Route::prefix('accounts')
-                    ->group(
-                        proxymurder_passport_dir('routes/accounts.php')
-                    );
+                // Route::prefix('accounts')
+                //     ->group(
+                //         proxymurder_passport_dir('routes/accounts.php')
+                //     );
 
                 // Route::prefix('/oauth')
                 //     ->group(proxymurder_passport_dir('routes/oauth.php'));
             });
 
-            Route::middleware('api')
-                ->prefix('/api')
-                ->group(
-                    proxymurder_passport_dir('routes/api.php')
-                );
+            // Route::middleware('api')
+            //     ->prefix('/api')
+            //     ->group(
+            //         proxymurder_passport_dir('routes/api.php')
+            //     );
         });
     }
 }
