@@ -10,9 +10,12 @@ class OAuthServiceProvider extends ServiceProvider
 
 	public function boot()
 	{
-		$this->loadViewsFrom(proxymurder_passport('resources/views'), 'proxymurder/laravel-passport');
+		$this->loadViewsFrom(
+			proxymurder_passport_dir('resources/views'),
+			'proxymurder/laravel-passport'
+		);
 		$this->publishes([
-			proxymurder_passport('resources/views') => resource_path('views/vendor/proxymurder/laravel-passport'),
+			proxymurder_passport_dir('resources/views') => resource_path('views/vendor/proxymurder/laravel-passport'),
 		], 'laravel-passport-views');
 	}
 

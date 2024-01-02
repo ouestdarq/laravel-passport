@@ -9,13 +9,13 @@ class AuthServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        Passport::routes(
-            function ($router) {
-                $router->forAuthorization();
-                $router->forAccessTokens();
-                $router->forTransientTokens();
-            }
-        );
+        // Passport::routes(
+        //     function ($router) {
+        //         $router->forAuthorization();
+        //         $router->forAccessTokens();
+        //         $router->forTransientTokens();
+        //     }
+        // );
     }
     public function register()
     {

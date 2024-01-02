@@ -1,41 +1,41 @@
 {
-	"name": "proxymurder/laravel-passport",
-	"description": "Laravel's Passport single install PKCE implementation.",
-	"autoload": {
-		"psr-4": {
-			"ProxyMurder\\LaravelPassport\\": "src/"
-		},
-		"files": [
-			"helpers.php"
-		]
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"ProxyMurder\\LaravelPassport\\Tests\\": "tests/"
-		}
-	},
-	"authors": [
-		{
-			"name": "MurderByProxy",
-			"email": "ohmygod@proxymurder.com"
-		}
-	],
-	"require": {
-		"laravel/passport": "^10.4"
-	},
-	"require-dev": {
-		"orchestra/testbench": "^7.5"
-	},
-	"extra": {
-		"laravel": {
-			"providers": [
-				"ProxyMurder\\LaravelPassport\\Providers\\AuthServiceProvider",
-				"ProxyMurder\\LaravelPassport\\Providers\\OAuthServiceProvider",
-				"ProxyMurder\\LaravelPassport\\Providers\\RouteServiceProvider"
-			],
-			"aliases": {
-				"Auth": "ProxyMurder\\LaravelPassport\\Facades\\Auth"
-			}
-		}
-	}
+    "name": "proxymurder/laravel-passport",
+    "description": "Laravel's Passport PKCE (only).",
+    "autoload": {
+        "psr-4": {
+            "ProxyMurder\\LaravelPassport\\": "src/"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ProxyMurder\\LaravelPassport\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MurderByProxy",
+            "email": "ohmygod@proxymurder.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^7.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ProxyMurder\\LaravelPassport\\Providers\\AuthServiceProvider",
+                "ProxyMurder\\LaravelPassport\\Providers\\OAuthServiceProvider",
+                "ProxyMurder\\LaravelPassport\\Providers\\RouteServiceProvider"
+            ],
+            "aliases": {
+                "Auth": "ProxyMurder\\LaravelPassport\\Facades\\Auth"
+            }
+        }
+    },
+    "require": {
+        "laravel/passport": "^11.10"
+    }
 }
