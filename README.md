@@ -1,3 +1,3 @@
-# PKCE (ONLY) Implementation of Laravel's Passport
+# Laravel's Passport PKCE implementation 
 
 ## Instalation
