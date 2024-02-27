@@ -6,8 +6,6 @@ the only route being registered is `/login` view which creates a `get` route, an
 `src/Http/Controllers/AuthenticationController`.
 
 `src/Providers/OAuthServiceProvider` is loading and publishing `resources/views`.
+This makes the use of `proxymurder/laravel-passport::<blade_file>` possible through out the project.
 
-There has been no update to blade files since we'll be managing all of the front end in a separate space.
-The choice has been made to made a collection of Vue components that will satisfy multiple needs.
-
-## Instalation
+This project will be abandoned and left only for some reference.
